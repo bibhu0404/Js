@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter App</title>
+</head>
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+
+    <script>
+        let count = 0;
+
+        function increment() {
+            count++;
+            document.querySelector('#counter').textContent = count;
+            document.querySelector('#counter').style.backgroundColor = "Green";
+        }
+
+        function decrement() {
+            count--;
+            document.getElementById('counter').textContent = count;
+            document.querySelector('#counter').style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

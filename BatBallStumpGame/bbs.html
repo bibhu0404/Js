@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketGame</title>
+    <link rel="stylesheet" href="bbs.css">
+</head>
+<body>
+    <div>
+        <h1>BatBallStumpGame 🏏</h1>
+        <button onclick="
+            generateComputerChoice();
+            userChoice = 'Bat';
+            inputAndCmp();
+        ">BAT</button>
+
+        <button onclick="
+            generateComputerChoice();
+            userChoice = 'Ball';
+            inputAndCmp();
+        ">BALL</button>
+
+        <button onclick="
+            generateComputerChoice();
+            userChoice = 'Stump';
+            inputAndCmp();
+        ">STUMP</button>
+
+        <button class="reset-button" onclick="
+            localStorage.clear();
+            resetScore();
+        ">Reset</button>
+
+        <br>
+        <h5>RESULT: 
+            <input type="text" name="result" id="resultDisplay" readonly>
+        </h5>
+    </div>
+    <script src="bbs.js"></script>
+</body>
+</html>
